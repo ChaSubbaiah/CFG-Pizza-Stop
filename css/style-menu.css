@@ -1,0 +1,49 @@
+body{
+  background-color: #E6CB44;
+  overflow: scroll;
+}
+a{
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #44629E;
+}
+div{
+  background-color: rgba(255,255,255,1);
+  background-size: cover;
+  padding-top: 10px;
+  margin:60px 0 0 0;
+  text-align: center;
+}
+
+h2{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #44629E;
+}
+.step1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.step1 img{
+  height:150px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.step1 img:hover{
+  height:200px;
+  overflow: hidden;
+}
+.step1 li{
+  display: inline-block;
+  list-style: none;
+}
+li{
+  padding: 0px 50px 0px 50px;
+  display: inline;
+  list-style: none;
+}
+img{
+  height: 30px;
+}

@@ -1,0 +1,69 @@
+body{
+  text-align: center;
+  background: url('https://png.pngtree.com/thumb_back/fw800/back_pic/03/77/70/5557c044f662e9e.jpg');
+  background-size: cover;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-color: black;
+  color: white;
+  max-width: 600px;
+}
+h1{
+  margin: 130px 0px -10px 0px;
+  font-size: 70px;
+  font-family:courier;
+}
+a{
+  text-align: center;
+  margin-top: 200px;
+  font-size: 50px;
+  font-family:courier;
+  color: white;
+  text-decoration: none;
+  background-color: #E6CB44;
+}
+a:hover{
+  font-size: 58px;
+  font-family:courier;
+  color: white;
+  text-decoration: none;
+  overflow: hidden;
+}
+img {
+  height: 30px;
+}
+h4{
+  margin: 0;
+  font-size: 24px;
+  font-family: "alternate_gothic_fsno_2", Helvetica,Arial,sans-serif;
+  color: #E6CB44;
+  box-sizing: border-box;
+  display: block;
+}
+div{
+  position:relative;
+  bottom:0;
+  margin: 40px auto;
+}
+.About{
+  margin: 0 800px 0 100px;
+}
+.Follow{
+  margin: 0 100px 0 300px;
+}
+ul:list_style{
+  margin: 0;
+  padding: 0 20px;
+  text-align: center;
+  border-top:solid 1px;
+  padding: 10px 0;
+  list-style: none;
+  font-family: "alternate_gothic_fsno_2", Helvetica,Arial,sans-serif;
+}
+li{
+  display: list-item;
+  list-style: none;
+  font-size: 20px;
+  font-family: "alternate_gothic_fsno_2", Helvetica,Arial,sans-serif;
+  text-align: center;
+}
