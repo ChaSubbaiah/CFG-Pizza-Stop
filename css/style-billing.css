@@ -1,0 +1,36 @@
+body{
+  text-align: center;
+  background: url('https://png.pngtree.com/thumb_back/fw800/back_pic/03/77/70/5557c044f662e9e.jpg');
+  background-size: cover;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-color: black;
+  color: white;
+  max-width: 600px;
+}
+p{
+  text-align: center;
+  margin-top: 200px;
+  font-size: 45px;
+  font-family:courier;
+  color: white;
+  text-decoration: none;
+  background-color: #E6CB44;
+}
+a{
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 500px;
+  font-size: 25px;
+  font-family:courier;
+  color: white;
+  text-decoration: none;
+  background-color: #FF8C00;
+}
+a:hover{
+  font-size: 35px;
+  font-family:courier;
+  color: white;
+  text-decoration: none;
+  overflow: hidden;
+}
