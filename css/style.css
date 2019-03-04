@@ -38,7 +38,7 @@ h4{
   font-family: "alternate_gothic_fsno_2", Helvetica,Arial,sans-serif;
   color: #E6CB44;
   box-sizing: border-box;
-  display: block;
+  display: inline-block;
 }
 div{
   position:relative;
