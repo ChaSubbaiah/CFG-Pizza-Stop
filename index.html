@@ -4,16 +4,22 @@
     <meta charset="utf-8">
     <title>Pizza Stop Website-Custom Pizza</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous"/>
   </head>
   <body>
     <header>
-      <h1>Pizza Stop</h1>
-      <div class="Desc">
-        <p>Customise your own Pizza from a variety of options.</p>
+      <div class="container" align="center">
+        <h1 class="title">Pizza Stop</h1>
+        <div class="Desc">
+          <p class="text-white">Customise your own Pizza from a variety of options.</p>
+        </div>
       </div>
     </header>
-    <div class="menu">
-      <a href="menu.html">Order Pizza Now!</a>
+    <div class="container" align="center">
+      <div class="menu">
+      <a href="menu.html" role="button" class="btn btn-outline-warning btn-lg">
+        Order Pizza Now!</a>
+      </div>
     </div>
     <!--
     <div class="Placeholder1">
@@ -22,19 +28,23 @@
     <div class="Placeholder2">
       <img src="Images/" alt="Image not available">
     </div> -->
-    <div class="About">
-      <h4>About</h4>
+    <div class="container" align="center">
+      <div class="About text-white">
+        <h4>About</h4>
         <ul class="list_style">
           <li>About Us</li>
           <li>Contact Us</li>
         </ul>
+      </div>
     </div>
-    <div class="Follow">
-      <h4>Follow Us</h4>
+    <div class="container" align="center">
+      <div class="Follow text-white">
+        <h4>Follow Us</h4>
         <ul class="list_style">
           <li><img src="images/facebook_logo.png" alt=""></li>
           <li><img src="images/twitter_logo.png" alt=""></li>
         </ul>
+      </div>
     </div>
   </body>
 </html>
