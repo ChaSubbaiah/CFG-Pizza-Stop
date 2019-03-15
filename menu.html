@@ -4,41 +4,79 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="css/style-menu.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous"/>
   </head>
   <body>
-    <div class="header">
-      <p>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-
-          <li class="basket"><a href="billing.html"><img src="images/basket-icon.png" alt="Image not available"</a></li>
-
-          <li><input id="basketValue" type="text" value="£0.00" /></li>
-        </ul>
-      </p>
-    </div>
-    <div class="step1">
-      <h2> Step 1: Choose Size of Pizza</h2>
-      <p>
-        <ul>
-          <li><img src="images/pizza_size1.png" alt="Image not available"></li>
-          <li><img src="images/pizza_size2.png" alt="Image not available"></li>
-          <li><img src="images/pizza_size3.png" alt="Image not available"></li>
-          <li><img src="images/pizza_size4.png" alt="Image not available"></li>
-        </ul>
-      </p>
-    </div>
-    <div class="step2">
-      <h2> Step 2: Choose Your Crust </h2>
-      <p>
-        <ul>
-          <li><img src="images/deep_crust.png" alt="Image not available"></li>
-          <li><img src="images/stuffed_crust.png" alt="Image not available"></li>
-          <li><img src="images/thin_crust.png" alt="Image not available"></li>
-          <li><img src="images/regular_crust.png" alt="Image not available"></li>
-        </ul>
-      </p>
-    </div>
+    <header>
+      <div class="container" align="center">
+        <div class="header">
+          <p>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li class="basket"><a href="billing.html" class="button"><img src="images/basket-icon.png" alt="Image not available"></a></li>
+              <li><input id="basketValue" type="text" value="£0.00" /></li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="step1">
+        <h2> Step 1: Choose Size of Pizza</h2>
+        <p>
+          <div class="row">
+            <div class="column">
+              <img src="images/pizza_size1.png" alt="Image not available" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="images/pizza_size2.png" alt="Image not available" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="images/pizza_size3.png" alt="Image not available" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="images/pizza_size4.png" alt="Image not available" style="width:100%">
+            </div>
+          </div>
+        <p>
+          <select name="thePizzaSize" size="1">
+            <option value="tenInch">10" Inch - £5.00</option>
+            <option value="twelveInch">12" - £6.00</option>
+            <option value="fourteenInch">14" - £7.00</option>
+            <option value="sixteenInch">16" - £7.50</option>
+          </select>
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="step2">
+        <h2> Step 2: Choose Your Crust </h2>
+        <p>
+          <div class="row2">
+            <div class="column">
+              <img src="images/deep_crust.png" alt="Image not available" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="images/stuffed_crust.png" alt="Image not available" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="images/thin_crust.png" alt="Image not available" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="images/regular_crust.png" alt="Image not available" style="width:100%">
+            </div>
+          </div>
+        <p>
+        <p>
+          <select name="theCrustType" size="1">
+            <option value="deep_crust">1. Deep Crust - £3.00</option>
+            <option value="stuffed_crust">2. Stuffed Crust - £4.00</option>
+            <option value="thin_crust">3. Thin Crust - £3.00</option>
+            <option value="regular_crust">4. Regular Crust - £0.00</option>
+          </select>
+        </p>
+      </div>
+    </section>
     <div class="step3">
       <h2> Step 3: Choose Your Toppings</h2>
       <p>
@@ -62,8 +100,20 @@
     <div class="Quantity">
       <h2> Add To Basket</h2>
       <p>
-        <input id="theQuantity" type="number" size="4" class="input-text qty text" title="Qty" value="1" min="0" step="1">
-        <input id="theAddToBasket" type="button" name="theAddToBasket" value="Add to Order">
+        <select name="theQuantity" size="1">
+          <option value="oneQuantity">1</option>
+          <option value="twoQuantity">2</option>
+          <option value="threeQuantity">3</option>
+          <option value="fourQuantity">4</option>
+          <option value="fiveQuantity">5</option>
+        </select>
+        <input id="theAddToBasket" type="button" name="theAddToBasket" value="Select Quantity">
+        </br>
+        <input id="theTotalCost" type="number" size="4" class="input-text qty text" title="Qty" value="1" min="0" step="1">
+        <input id="displayTotalCost" type="button" name="displayTotalCost" value="Total Cost">
+        </br>
+        </br>
+        <button id="toBilling" type="button" name="continueToBilling"onclick="window.location.href='../CFG-Pizza-Stop/billing.html'">Continue to Payment</button>
       </p>
     </div>
   </body>

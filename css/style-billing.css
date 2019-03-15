@@ -6,8 +6,17 @@ body{
   background-repeat: no-repeat;
   background-color: black;
   color: white;
-  max-width: 600px;
 }
+.title{
+  margin: 130px 0px -10px 0px;
+  font-size: 3em;
+  color: white;
+  font-family:courier;
+}
+.text-white {
+  color: white;
+}
+
 p{
   text-align: center;
   margin-top: 200px;
@@ -16,21 +25,4 @@ p{
   color: white;
   text-decoration: none;
   background-color: #E6CB44;
-}
-a{
-  text-align: center;
-  margin-top: 200px;
-  margin-bottom: 500px;
-  font-size: 25px;
-  font-family:courier;
-  color: white;
-  text-decoration: none;
-  background-color: #FF8C00;
-}
-a:hover{
-  font-size: 35px;
-  font-family:courier;
-  color: white;
-  text-decoration: none;
-  overflow: hidden;
 }
