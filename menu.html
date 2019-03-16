@@ -10,13 +10,12 @@
     <header>
       <div class="container" align="center">
         <div class="header">
-          <p>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li class="basket"><a href="billing.html" class="button"><img src="images/basket-icon.png" alt="Image not available"></a></li>
-              <li><input id="basketValue" type="text" value="£0.00" /></li>
-            </ul>
-          </p>
+          <ul class="list">
+            <li><a href="index.html">Home</a></li>
+            <li id="menu_font"><b>MENU</b></li>
+            <li class="basket"><a href="billing.html" class="button"><img src="images/basket-icon.png" alt="Image not available"></a></li>
+            <!--<li class="basketValue"><input id="basketValue" type="text" value="£0.00" readonly /></li> -->
+          </ul>
         </div>
       </div>
     </header>
@@ -38,20 +37,21 @@
               <img src="images/pizza_size4.png" alt="Image not available" style="width:100%">
             </div>
           </div>
-        <p>
-          <select name="thePizzaSize" size="1">
-            <option value="tenInch">10" Inch - £5.00</option>
+        <div class="thePizzaSize">
+          <input type="hidden" id="pizzaSize" value="Pizza Size"/>
+          <select name="thePizzaSize" id="thePizzaSize" size="1">
+            <option value="default">Choose One</option>
+            <option value="tenInch">10" - £5.00</option>
             <option value="twelveInch">12" - £6.00</option>
             <option value="fourteenInch">14" - £7.00</option>
             <option value="sixteenInch">16" - £7.50</option>
           </select>
-        </p>
+        </div>
       </div>
     </section>
     <section>
       <div class="step2">
         <h2> Step 2: Choose Your Crust </h2>
-        <p>
           <div class="row2">
             <div class="column">
               <img src="images/deep_crust.png" alt="Image not available" style="width:100%">
@@ -66,15 +66,15 @@
               <img src="images/regular_crust.png" alt="Image not available" style="width:100%">
             </div>
           </div>
-        <p>
-        <p>
+        <div class="thePizzaSize">
           <select name="theCrustType" size="1">
-            <option value="deep_crust">1. Deep Crust - £3.00</option>
-            <option value="stuffed_crust">2. Stuffed Crust - £4.00</option>
-            <option value="thin_crust">3. Thin Crust - £3.00</option>
-            <option value="regular_crust">4. Regular Crust - £0.00</option>
+            <option value="default">Choose One</option>
+            <option value="deep_crust">Deep Crust - £3.00</option>
+            <option value="stuffed_crust">Stuffed Crust - £4.00</option>
+            <option value="thin_crust">Thin Crust - £3.00</option>
+            <option value="regular_crust">Regular Crust - £0.00</option>
           </select>
-        </p>
+        </div>
       </div>
     </section>
     <div class="step3">
@@ -98,7 +98,6 @@
       </p>
     </div>
     <div class="Quantity">
-      <h2> Add To Basket</h2>
       <p>
         <select name="theQuantity" size="1">
           <option value="oneQuantity">1</option>
@@ -109,7 +108,7 @@
         </select>
         <input id="theAddToBasket" type="button" name="theAddToBasket" value="Select Quantity">
         </br>
-        <input id="theTotalCost" type="number" size="4" class="input-text qty text" title="Qty" value="1" min="0" step="1">
+        <input id="theTotalCost" type="number" size="4" class="input-text qty text"  min="0" step="1" readonly>
         <input id="displayTotalCost" type="button" name="displayTotalCost" value="Total Cost">
         </br>
         </br>

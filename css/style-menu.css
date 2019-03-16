@@ -2,24 +2,36 @@ body{
   background-color: #E6CB44;
   overflow: scroll;
 }
-.container {
-  position: relative;
-  width: 50%;
+.container{
+  margin:0;
+  padding:0;
 }
 .title{
-  margin: 130px 0px -10px 0px;
-  font-size: 6em;
+  display: block;
+  text-align: center;
+  font-size: 4em;
   color: #E6CB44;
   font-family:courier;
 }
-.text-white {
-  color: white;
+.header{
+  margin:0;
+  padding:0;
+  background-color: #E6CB44;
+  border:10px solid #FF8C00;
+  border-radius:10px;
 }
+
+#menu_font{
+  font-size: 60px;
+  font-family:courier;
+  color:white;
+}
+
 a{
   text-decoration: none;
   font-size: 30px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  color: #44629E;
+  font-family: courier;
+  color: white;
 }
 #basketValue{
   font-size: 20px;
@@ -34,12 +46,14 @@ div{
   background-color: rgba(255,255,255,1);
   background-size: cover;
   padding-top: 10px;
-  margin:60px 0 0 0;
+  margin:20px 0 0 0;
   text-align: center;
+  border:none;
 }
 h2{
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  color: #44629E;
+  font-family: courier;
+  color: #f7f9f9;
+  background-color: #E6CB44;
 }
 .column {
   float: left;
@@ -48,15 +62,20 @@ h2{
 }
 .step1{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  color:white;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
+.row{
+  margin:auto;
+}
 .step1 img{
-  height:300px;
+  padding: 0px 40px 0px 50px;
+  height:240px;
+  width:20px;
   display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .step1 img:hover{
   /* Start the shake animation and make the animation last for 0.5 seconds */
@@ -64,6 +83,14 @@ h2{
 
   /* When the animation is finished, start again */
   animation-iteration-count: infinite;
+}
+div .thePizzaSize{
+  background-color: rgba(255,255,255,1);
+  background-size: cover;
+  padding:0;
+  margin:0;
+  text-align: center;
+  border:none;
 }
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -83,10 +110,14 @@ h2{
   display: inline-block;
   list-style: none;
 }
+
+.column{
+  margin:auto;
+}
 .step2{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  color:white;
+  margin:auto;
   margin-bottom: 20px;
 }
 .step2 img{
@@ -96,7 +127,6 @@ h2{
   margin-right: auto;
   border:10px solid #FF8C00;
   border-radius:40px;
-  margin: 0 2px;
 }
 .step2 img:hover{
   /* Start the shake animation and make the animation last for 0.5 seconds */
@@ -109,23 +139,28 @@ h2{
   display: inline-block;
   list-style: none;
 }
+.row2{
+  margin:auto;
+}
 p{
   display:inline;
   text-align: bottom;
 }
 ul{
-  padding: 0px 50px 0px 50px;
   display: inline;
   list-style: none;
+  padding: 5px;
 }
 img{
-  height: 30px;
+  height: 45px;
+  margin-bottom: 20px;
 }
 
 input{
   margin-bottom: 20px;
 }
 .step3 img{
+  color:white;
   height:90px;
   max-width: 150px;
   display: inline-block;
@@ -149,10 +184,6 @@ li{
   display: inline;
   list-style: none;
 }
-img{
-  height: 30px;
-}
-
 input{
   margin-bottom: 40px;
 }
@@ -169,4 +200,27 @@ input{
   color: white;
   text-decoration: none;
   background-color: #FF8C00;
+}
+
+#toBilling{
+  display:none;
+}
+/* Style dropdown list */
+select{
+  font-family: courier;
+  font-size: 100em;
+  height: 50px;
+  width: 180px;
+  color: white;
+  background-color: #FF8C00;
+  padding: 0;
+  border-radius: 0;
+  position: relative;
+}
+
+.Quantity select{
+  background-color: white;
+  color: black;
+  height: 30px;
+  width:50px;
 }
