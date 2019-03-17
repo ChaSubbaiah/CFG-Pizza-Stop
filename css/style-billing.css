@@ -8,7 +8,7 @@ body{
   color: white;
 }
 .title{
-  margin: 130px 0px -10px 0px;
+  margin: 200px 0px -10px 0px;
   font-size: 3em;
   color: white;
   font-family:courier;
@@ -17,12 +17,6 @@ body{
   color: white;
 }
 
-p{
-  text-align: center;
-  margin-top: 200px;
-  font-size: 45px;
-  font-family:courier;
-  color: white;
-  text-decoration: none;
-  background-color: #E6CB44;
+.menu{
+  margin: 200px 0px 0px 0px;
 }
