@@ -11,6 +11,7 @@ function setTotal(){
   console.log(selection_crust);
   console.log(selection_quantity);
   var totalValue= (selection_pizzaSize+selection_crust+selection_topping)*selection_quantity;
+  var totes = (pizzasize+crust+topping)*numberOfPizza;
   //string("totValue")= toString(totalvalue);
-  document.getElementById("theTotalCost").value=totalValue;
+  document.getElementById("theTotalCost").value=totes;
 }
