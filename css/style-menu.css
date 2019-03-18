@@ -171,34 +171,61 @@ img{
 input{
   margin-bottom: 10px;
 }
-.step3 img{
+.step3{
+  display: block;
   color:white;
-  height:90px;
-  max-width: 150px;
+  margin:auto;
+  margin-bottom: 20px;
+  font-family: fantasy;
+  height: 30px;
+  padding: 0px;
+}
+.step3 img{
+  display: block;
+  font-family: fantasy;
+  color:white;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  height:180px;
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
   border:10px solid #FF8C00;
   border-radius:40px;
-  margin: 0 2px;
 }
 .step3 img:hover{
-  height:140px;
-  overflow: hidden;
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.6s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
 }
 .step3 li{
   display: inline-block;
-  list-style: disc;
-}
-
-li{
-  padding: 90px 90px 0px 50px;
-  display: inline;
   list-style: none;
 }
-input{
-  margin-bottom: 40px;
+.row2{
+  margin:auto;
 }
+p{
+  display:inline;
+  text-align: bottom;
+}
+ul{
+  display: inline;
+  list-style: none;
+  padding: 5px;
+  margin-top: 80px;
+}
+img{
+  height: 45px;
+  margin-bottom: 30px;
+}
+
+input{
+  margin-bottom: 10px;
+}
+
 #theAddToBasket{
   font-size: 20px;
   font-family:fantasy;
