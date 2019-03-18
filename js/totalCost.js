@@ -15,8 +15,12 @@ function setTotal(){
   var totes = totalValue * (Number(selection_quantity));
   console.log(totalValue);
   console.log(totes);
-  document.getElementById("theTotalCost").value= Number(totes);
-  $("#theToppingsType").change(function () {
-    $("#toBilling").toggle(!isNaN(+$(this).val()));
-});
+  document.getElementById("theTotalCost").value= Number(totes).toFixed(2);
+  document.getElementById("basketValue").value=Number(totes).toFixed(2);
+
+  function buttonVisible(){
+    $("#theToppingsType").change(function () {
+      $("#toBilling").toggle(!isNaN(+$(this).val()));
+  });
+  }
 }
