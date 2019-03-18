@@ -7,49 +7,46 @@ body{
   padding:0px 0px 0px 0px;
   background-color: rgba(0, 0, 0, 0);
 }
-
-.title{
-  display: block;
-  text-align: center;
-  font-size: 4em;
-  color: #E6CB44;
-  font-family:fantasy;
-}
 header{
   background:url('https://png.pngtree.com/thumb_back/fw800/back_pic/03/77/70/5557c044f662e9e.jpg');
   padding:0px;
   background-repeat: no-repeat;
-  background-size:1600px 250px;
+  background-size: 1800px 300px;
 }
-
 .header{
   margin:0px 0px 0px 0px;
   padding:0px 0px 0px 0px;
   background-color: rgba(0, 0, 0, 0);
-  height:110px;
+  height:200px;
   width: 1100px;
 }
-
+.container ul{
+  display: inline-block;
+  list-style: none;
+  margin-top: 65px;
+}
+.container li{
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 70px;
+}
 #menu_font{
   font-size: 60px;
   font-family: fantasy;
   color:white;
 }
-
+img{
+  height: 45px;
+  margin-bottom: 30px;
+}
 a{
   text-decoration: none;
   font-size: 30px;
   font-family: fantasy;
   color: white;
 }
-#basketValue{
-  font-size: 20px;
-  font-family:fantasy;
-  margin: 10px 0px 10px 0px;
-  color: white;
-  border: none;
-  background-color: #FF8C00;
-  width:60px;
+section {
+  padding-bottom: 10px;
 }
 div{
   background-color: rgba(255,255,255,1);
@@ -125,11 +122,10 @@ div .thePizzaSize{
 }
 .step2{
   display: block;
-  color:white;
-  margin:auto;
-  margin-bottom: 20px;
   font-family: fantasy;
-  height: 30px;
+  color:white;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
 }
 .step2 img{
   height:200px;
@@ -157,12 +153,6 @@ p{
   display:inline;
   text-align: bottom;
 }
-ul{
-  display: inline;
-  list-style: none;
-  padding: 5px;
-  margin-top: 80px;
-}
 img{
   height: 45px;
   margin-bottom: 30px;
@@ -173,11 +163,9 @@ input{
 }
 .step3{
   display: block;
-  color:white;
-  margin:auto;
-  margin-bottom: 20px;
   font-family: fantasy;
-  height: 30px;
+  color:white;
+  margin: 0px 0px 0px 0px;
   padding: 0px;
 }
 .step3 img{
@@ -206,20 +194,6 @@ input{
 }
 .row2{
   margin:auto;
-}
-p{
-  display:inline;
-  text-align: bottom;
-}
-ul{
-  display: inline;
-  list-style: none;
-  padding: 5px;
-  margin-top: 80px;
-}
-img{
-  height: 45px;
-  margin-bottom: 30px;
 }
 
 input{
@@ -252,9 +226,8 @@ select{
   width: 180px;
   color: white;
   background-color: #FF8C00;
-  padding: 0;
+  padding: 0px;
   border-radius: 0;
-  position: relative;
 }
 
 .Quantity select{
@@ -262,4 +235,13 @@ select{
   color: black;
   height: 30px;
   width:50px;
+}
+#basketValue{
+  font-size: 20px;
+  font-family:fantasy;
+  margin: 10px 0px 10px 0px;
+  color: white;
+  border: none;
+  background-color: #FF8C00;
+  width:60px;
 }
