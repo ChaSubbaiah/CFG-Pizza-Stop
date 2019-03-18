@@ -43,6 +43,11 @@ li{
 }
 
 .Follow_text-white{
-  margin-top: 120px;
+  margin-top: 2px;
+  color: white;
+}
+
+.About_text-white{
+  margin-top:120px;
   color: white;
 }
