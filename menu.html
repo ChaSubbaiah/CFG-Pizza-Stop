@@ -42,7 +42,7 @@
           <input type="hidden" id="pizzaSize" value="Pizza Size" />
           <form>
           <select name="thePizzaSize" id="thePizzaSize" size="1" onChange="setTotal()">
-            <option value="1">Choose One</option>
+            <option value="0">Choose One</option>
             <option value="5">10" - £5.00</option>
             <option value="6">12" - £6.00</option>
             <option value="7">14" - £7.00</option>
@@ -71,7 +71,7 @@
           </div>
         <div class="thePizzaSize">
           <select name="theCrustType" id="theCrustType" size="1" onChange="setTotal()">
-            <option value="1">Choose One</option>
+            <option value="0">Choose One</option>
             <option value="3">Deep Crust - £3.00</option>
             <option value="4">Stuffed Crust - £4.00</option>
             <option value="3">Thin Crust - £3.00</option>
@@ -110,16 +110,16 @@
           </div>
         </div>
         <div class="thePizzaSize">
-          <select name="theToppingsType" id="theToppingsType" size="1">
-            <option value="default">Choose One</option>
-            <option value="pepperoni">Pepperoni - £1</option>
-            <option value="ground_beef">Ground Beef - £1</option>
-            <option value="ham">Ham - £1</option>
-            <option value="mushrooms">Mushrooms - £0.80</option>
-            <option value="onions">Onions -  £0.80</option>
-            <option value="pineapples">Pineapples -  £0.80</option>
-            <option value="jalapeno-pepper">Jalapeno Pepper-  £0.80</option>
-            <option value="tomatoes">Tomatoes -  £0.80</option>
+          <select name="theToppingsType" id="theToppingsType" size="1" onChange="setTotal()">
+            <option value="0">Choose One</option>
+            <option value="2">Pepperoni - £2.00</option>
+            <option value="2">Ground Beef - £2.00</option>
+            <option value="2">Ham - £2.00</option>
+            <option value="1">Mushrooms - £1.00</option>
+            <option value="1">Onions -  £1.00</option>
+            <option value="1">Pineapples -  £1.00</option>
+            <option value="1">Jalapeno Pepper-  £1.00</option>
+            <option value="1">Tomatoes -  £1.00</option>
           </select>
         </div>
      </div>
