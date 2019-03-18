@@ -9,9 +9,18 @@ function setTotal(){
   var selection_quantity = numberOfPizza.options[numberOfPizza.selectedIndex].value;
   console.log(selection_pizzaSize);
   console.log(selection_crust);
+  console.log(selection_topping);
   console.log(selection_quantity);
-  var totalValue= (selection_pizzaSize+selection_crust+selection_topping)*selection_quantity;
-  var totes = (pizzasize+crust+topping)*numberOfPizza;
-  //string("totValue")= toString(totalvalue);
-  document.getElementById("theTotalCost").value=totes;
+  var totalValue= Number(selection_pizzaSize)+ Number(selection_crust)+ Number(selection_topping);
+  var totes = totalValue * (Number(selection_quantity));
+  console.log(totalValue);
+  console.log(totes);
+  document.getElementById("theTotalCost").value= Number(totes).toFixed(2);
+  document.getElementById("basketValue").value=Number(totes).toFixed(2);
+
+  function buttonVisible(){
+    $("#theToppingsType").change(function () {
+      $("#toBilling").toggle(!isNaN(+$(this).val()));
+  });
+  }
 }

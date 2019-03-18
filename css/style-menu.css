@@ -39,6 +39,15 @@ img{
   height: 45px;
   margin-bottom: 30px;
 }
+#basketValue{
+  font-size: 20px;
+  font-family:fantasy;
+  margin-bottom: 30px;
+  color: white;
+  border: none;
+  background-color: #FF8C00;
+  width:60px;
+}
 a{
   text-decoration: none;
   font-size: 30px;
@@ -195,11 +204,9 @@ input{
 .row2{
   margin:auto;
 }
-
 input{
   margin-bottom: 10px;
 }
-
 #theAddToBasket{
   font-size: 20px;
   font-family:fantasy;
@@ -214,9 +221,17 @@ input{
   text-decoration: none;
   background-color: #FF8C00;
 }
-
+#theTotalCost{
+  font-size: 20px;
+  font-family:fantasy;
+  color:#FF8C00;
+}
 #toBilling{
-  display:none;
+  font-size: 20px;
+  font-family:fantasy;
+  color: white;
+  text-decoration: none;
+  background-color: #FF8C00;
 }
 /* Style dropdown list */
 select{
@@ -229,19 +244,9 @@ select{
   padding: 0px;
   border-radius: 0;
 }
-
 .Quantity select{
   background-color: white;
   color: black;
   height: 30px;
   width:50px;
-}
-#basketValue{
-  font-size: 20px;
-  font-family:fantasy;
-  margin: 10px 0px 10px 0px;
-  color: white;
-  border: none;
-  background-color: #FF8C00;
-  width:60px;
 }
