@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"> </script>
+    <link rel="stylesheet" href="css/style-menu.css">
+    <script src="js/totalCost.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous"/>
+  </head>
+  <body>
+    <header>
+      <div class="container" align="center">
+        <div class="header">
+          <ul class="list">
+            <li><a href="index.html">Home</a></li>
+            <li id="menu_font"><b>MENU</b></li>
+            <li class="basket"><a href="billing.html" class="button"><img src="images/basket-icon.png" alt="Image not available"></a></li>
+            <li class="basketValue"><input id="basketValue" type="number" value="0.00" readonly /></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="step1">
+        <h2> Step 1: Choose Size of Pizza</h2>
+          <div class="row">
+            <div class="column">
+              <img src="images/pizza_size1.png" alt="Image not available" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="images/pizza_size2.png" alt="Image not available" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="images/pizza_size3.png" alt="Image not available" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="images/pizza_size4.png" alt="Image not available" style="width:100%">
+            </div>
+          </div>
+        <div class="thePizzaSize">
+          <input type="hidden" id="pizzaSize" value="Pizza Size" />
+          <form>
+          <select name="thePizzaSize" id="thePizzaSize" size="1" onChange="setTotal()">
+            <option value="0">Choose One</option>
+            <option value="5">10" - £5.00</option>
+            <option value="6">12" - £6.00</option>
+            <option value="7">14" - £7.00</option>
+            <option value="8">16" - £8.00</option>
+          </select>
+        </form>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="step2">
+        <h2> Step 2: Choose Your Crust </h2>
+          <div class="row2">
+            <div class="column">
+              <img src="images/deep_crust.png" alt="Image not available" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="images/stuffed_crust.png" alt="Image not available" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="images/thin_crust.png" alt="Image not available" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="images/regular_crust.png" alt="Image not available" style="width:100%">
+            </div>
+          </div>
+        <div class="thePizzaSize">
+          <select name="theCrustType" id="theCrustType" size="1" onChange="setTotal()">
+            <option value="0">Choose One</option>
+            <option value="3">Deep Crust - £3.00</option>
+            <option value="4">Stuffed Crust - £4.00</option>
+            <option value="3">Thin Crust - £3.00</option>
+            <option value="0">Regular Crust - £0.00</option>
+          </select>
+        </div>
+      </div>
+    </section>
+    <section>
+    <div class="step3">
+      <h2> Step 3: Choose Your Toppings</h2>
+        <div class="row2">
+          <div class="column">
+            <img src="images/pepperoni.jpg" alt="Image not available" style="width:80%">
+          </div>
+          <div class="column">
+            <img src="images/ground-beef.jpg" alt="Image not available" style="width:80%">
+          </div>
+          <div class="column">
+            <img src="images/ham.jpg" alt="Image not available" style="width:80%">
+          </div>
+          <div class="column">
+            <img src="images/mushrooms.jpg" alt="Image not available" style="width:80%">
+          </div>
+          <div class="column">
+            <img src="images/onions.jpg" alt="Image not available" style="width:80%">
+          </div>
+          <div class="column">
+            <img src="images/pineapples.jpg" alt="Image not available" style="width:80%">
+          </div>
+          <div class="column">
+            <img src="images/jalapeno-pepper.jpg" alt="Image not available" style="width:80%">
+          </div>
+          <div class="column">
+            <img src="images/tomatoes.jpg" alt="Image not available" style="width:80%">
+          </div>
+        </div>
+        <div class="thePizzaSize">
+          <select name="theToppingsType" id="theToppingsType" size="1" onChange="setTotal()">
+            <option value="0">Choose One</option>
+            <option value="2">Pepperoni - £2.00</option>
+            <option value="2">Ground Beef - £2.00</option>
+            <option value="2">Ham - £2.00</option>
+            <option value="1">Mushrooms - £1.00</option>
+            <option value="1">Onions -  £1.00</option>
+            <option value="1">Pineapples -  £1.00</option>
+            <option value="1">Jalapeno Pepper-  £1.00</option>
+            <option value="1">Tomatoes -  £1.00</option>
+          </select>
+        </div>
+     </div>
+    </section>
+    <section>
+      <div class="Quantity">
+        <select name="theQuantity" id="quantity" size="1" onChange="setTotal()">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <input id="theAddToBasket" type="button" name="theAddToBasket" value="Select Quantity">
+        </br>
+        <input id="theTotalCost" type="number" size="4" min="0" step="1" readonly>
+        <input id="displayTotalCost" type="button" name="displayTotalCost" value="Total Cost">
+        </br>
+        </br>
+        <button id="toBilling" type="button" name="continueToBilling"onclick="window.location.href='../CFG-Pizza-Stop/billing.html'">Continue to Payment</button>
+      </div>
+    </section>
+  </body>
+</html>

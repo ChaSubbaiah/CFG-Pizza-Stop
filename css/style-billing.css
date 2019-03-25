@@ -1,0 +1,22 @@
+body{
+  text-align: center;
+  background: url('https://png.pngtree.com/thumb_back/fw800/back_pic/03/77/70/5557c044f662e9e.jpg');
+  background-size: cover;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-color: black;
+  color: white;
+}
+.title{
+  margin: 200px 0px -10px 0px;
+  font-size: 3em;
+  color: white;
+  font-family:courier;
+}
+.text-white {
+  color: white;
+}
+
+.menu{
+  margin: 200px 0px 0px 0px;
+}
